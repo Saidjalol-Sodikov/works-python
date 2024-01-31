@@ -14,14 +14,14 @@ c долек, если разрешается сделать один разло
 
 a = 3
 b = 2
-c = 1
+c = 6
 
 # Введите ваше решение ниже
 
 plateBefore = a*b
 plateAfter = plateBefore-c
 
-if plateAfter%a==0 or plateAfter%b==0:
+if (c<=a*b) and (plateAfter%a==0 or plateAfter%b==0):
     print("yes")
 else:
     print('no')
