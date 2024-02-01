@@ -14,13 +14,14 @@ fib2 = 1
 fib3 = 1
 nNomer = 0
 
-while fib1<=n:
+while fib1<n:
     fib1 = fib2
     fib2 = fib3
     fib3 = fib1+fib2
     nNomer += 1
     if fib1==n:
         isFib = True
+    print(fib1)
 
 if isFib:
     # print(f'φ({nNomer})={n}')
