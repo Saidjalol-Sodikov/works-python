@@ -1,7 +1,7 @@
 print('Нахождение факториала от числа n.')
 n = int(input('Введите n: '))
-i = 0
-result = 0
+i = 1
+result = 1
 while i<=n:
     result *= i
     i +=  1
