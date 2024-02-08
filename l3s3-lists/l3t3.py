@@ -55,8 +55,9 @@ scoreList = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБ�
              4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
 
 word = k.upper()
-score=0
+score=0          
 for letter in word:
+    # score += scoreList[letter]
     for (scoreNum,scoreLetter) in scoreList.items():
         if letter in scoreLetter:
             score += scoreNum

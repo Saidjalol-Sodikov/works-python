@@ -24,4 +24,4 @@ for i in inputArr:
     else:
         numbersBook[tempKey] = tempValues
 
-print(numbersBook)
+print(*sorted(numbersBook.items()))
