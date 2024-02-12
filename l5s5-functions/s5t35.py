@@ -8,7 +8,7 @@ def is_simple (n):
     else:
         return True
         
-num = 1117
+num = int(input('Ведите число:'))
 if is_simple(num):
     print('yes')
 else:
