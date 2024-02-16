@@ -13,12 +13,11 @@
 В первой строке подаётся число n – количество холодильников. В последующих 
 строках вводятся строки, содержащие латинские строчные буквы и цифры, в каждой строке от 
 5 до 100 символов.
-
 Формат выходных данных
 Программа должна вывести номера зараженных холодильников через пробел. Если 
 таких холодильников нет, ничего выводить не нужно.
 
-Sample Input 1:
+Sample Input:
 6
 222anton456
 a1n1t1o1n1
@@ -26,10 +25,6 @@ a1n1t1o1n1
 gylfole
 richard
 ant0n
-Sample Output 1:
-1 2 3
-
-Sample Input 2:
 9
 osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen
 anton
@@ -40,19 +35,29 @@ tonee
 253235235a5323352n25235352t253523523235oo235523523523n
 antoooooooooooooooooooooooooooooooooooooooooooooooooooon
 unton
-Sample Output 2:
-1 2 7 8
+Sample Output:
+1, 2, 3, 8, 9, 14, 15
 '''
 keyword = 'anton'
 
 fridge_dates = []
-fridge_dates.append('anton')
+fridge_dates.append('6')
 fridge_dates.append('222anton456')
 fridge_dates.append('a1n1t1o1n1')
 fridge_dates.append('0000a0000n00t00000o000000n')
+fridge_dates.append('gylfole')
+fridge_dates.append('richard')
+fridge_dates.append('ant0n')
+fridge_dates.append('9')
 fridge_dates.append('osfjwoiergwoignaewpjofwoeijfnwfonewfoignewtowenffnoeiwowjfninoiwfen')
+fridge_dates.append('anton')
+fridge_dates.append('aoooooooooontooooo')
+fridge_dates.append('elelelelelelelelelel')
+fridge_dates.append('ntoneeee')
+fridge_dates.append('tonee')
 fridge_dates.append('253235235a5323352n25235352t253523523235oo235523523523n')
-fridge_dates.append('antooooooooooooooooooooooooooooooooooooooooon')
+fridge_dates.append('antoooooooooooooooooooooooooooooooooooooooooooooooooooon')
+fridge_dates.append('unton')
 
 infected_fridges_num = []
 
@@ -70,4 +75,4 @@ for i in range(len(fridge_dates)):
     if cheking(fridge_dates[i],keyword):
         infected_fridges_num.append(i)
     
-print(infected_fridges_num)
+print(*infected_fridges_num)
