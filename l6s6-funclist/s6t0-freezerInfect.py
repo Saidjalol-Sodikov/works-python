@@ -68,8 +68,7 @@ def cheking (string1, string2):
         return True
     if string1[0]!=string2[0]:
         return cheking (string1[1:],string2)
-    else:
-        return cheking (string1[1:],string2[1:])
+    return cheking (string1[1:],string2[1:])
 
 for i in range(len(fridge_dates)):
     if cheking(fridge_dates[i],keyword):
