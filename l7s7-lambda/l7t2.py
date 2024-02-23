@@ -29,7 +29,8 @@ def check (list_str):
     if len(list_str)<=0:
        return True
     if list_str[0]==list_str[1]:
-       return list_str[1:]
+       return check(list_str[1:])
+    return False
 
 if len(slova)<=1:
     print("Количество фраз должно быть больше одной!")
